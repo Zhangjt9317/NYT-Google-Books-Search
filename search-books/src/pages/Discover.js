@@ -10,6 +10,7 @@ class Discover extends Component {
         matchCount: 0
     };
 
+    // when the component mounts, load the next book
     ComponentDidMount() {
         this.loadNextBook();
     }
