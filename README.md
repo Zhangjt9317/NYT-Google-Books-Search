@@ -3,7 +3,7 @@
 ### Overview 
 
 This website is deployed on Heroku in the following link: 
-[NYT Google Books Search](https://protected-beach-88390.herokuapp.com/)
+[NYT Google Books Search](https://mighty-cliffs-79397.herokuapp.com/)
 
 ### Functions
 
