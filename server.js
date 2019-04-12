@@ -12,10 +12,10 @@ if (process.env.NODE_ENV === "production") {
 }
 
 const mongoose = require("mongoose");
-// const mongoURL = process.env.PROD_MONGODB || PORT;
-const mongoURL = `mongodb://heroku_vhdnrj2b:ktjflo9q5ct850gaus0imvgdtb@ds239206.mlab.com:39206/heroku_vhdnrj2b`;
+// const MONGODBURL = process.env.PROD_MONGODB || PORT;
+const MONGODBURL = "mongodb://heroku_vhdnrj2b:ktjflo9q5ct850gaus0imvgdtb@ds239206.mlab.com:39206/heroku_vhdnrj2b";
 
-mongoose.connect(mongoURL, { useNewUrlParser: true })
+mongoose.connect(MONGODBURL, { useNewUrlParser: true })
   .then(() => {
     console.log("🗄 ==> Successfully connected to mongoDB.");
   })
