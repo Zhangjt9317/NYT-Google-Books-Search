@@ -1,5 +1,5 @@
 nav {
-  background-color: #b33f30;
+  background-color: #f9c411;
   padding: 1rem 0;
 }
 
@@ -7,9 +7,7 @@ nav h2 {
   display: inline;
   margin: 0 2vw;
   font-size: 1.25rem;
-  color: black;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-display: bold;
+  color: white;
 }
 
 nav a {
@@ -23,13 +21,12 @@ nav a:hover {
   height: 100%;
 }
 nav a:visited {
-  color: rgb(53, 216, 216);
+  color: #33658A;
 }
 
 header h1 {
   font-size: 7vw;
   text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: white;
   padding: 12% 0 3%;
   text-shadow: 5px 5px 30px black;
@@ -37,7 +34,6 @@ header h1 {
 
 header p {
   font-size: 3vw;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
   color: white;
   text-shadow: 5px 5px 30px black;
@@ -45,13 +41,11 @@ header p {
 
 h3 {
   font-size: 1.5rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #searchContainer, #resultsContainer {
   color: white;
   background-color: #33658A;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 2vw;
   margin: 2vw;
   font-size: 3vw;
@@ -77,7 +71,6 @@ button {
   border-radius: 0;
   border: none;
   background-color: #f9c411;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: white;
   padding: .75vw;
   font-size: 1.25vw;
