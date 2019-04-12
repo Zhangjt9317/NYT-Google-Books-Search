@@ -8,12 +8,14 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
-    app.use(express.static("client/build"));
+  app.use(express.static("client/build"));
 }
 
 const mongoose = require("mongoose");
-const mongoURL = process.env.PROD_MONGODB || "mongodb://localhost:27017/googlebooks"
-mongoose.connect(mongoURL, {useNewUrlParser: true})
+// const mongoURL = process.env.PROD_MONGODB || PORT;
+const mongoURL = `mongodb://heroku_vhdnrj2b:ktjflo9q5ct850gaus0imvgdtb@ds239206.mlab.com:39206/heroku_vhdnrj2b`;
+
+mongoose.connect(mongoURL, { useNewUrlParser: true })
   .then(() => {
     console.log("🗄 ==> Successfully connected to mongoDB.");
   })
