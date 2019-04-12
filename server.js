@@ -12,10 +12,8 @@ if (process.env.NODE_ENV === "production") {
 }
 
 const mongoose = require("mongoose");
-const MONGODB_URI = `mongodb://dbSam:password@ds239206.mlab.com:39206/mighty-cliffs-79397`;
-
-
-mongoose.connect(MONGODB_URI, {useNewUrlParser: true})
+const mongoURL = process.env.PROD_MONGODB || "mongolab-slippery-66372";
+mongoose.connect(mongoURL, {useNewUrlParser: true})
   .then(() => {
     console.log("🗄 ==> Successfully connected to mongoDB.");
   })
