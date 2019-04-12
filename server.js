@@ -12,7 +12,7 @@ if (process.env.NODE_ENV === "production") {
 }
 
 const mongoose = require("mongoose");
-const mongoURL = process.env.PROD_MONGODB || "mongodb://heroku_vhdnrj2b:password@ds239206.mlab.com:39206/heroku_vhdnrj2b"
+const mongoURL = process.env.PROD_MONGODB || "mongodb://heroku_vhdnrj2b:ktjflo9q5ct850gaus0imvgdtb@ds239206.mlab.com:39206/heroku_vhdnrj2b"
 mongoose.connect(mongoURL, {useNewUrlParser: true})
   .then(() => {
     console.log("🗄 ==> Successfully connected to mongoDB.");
