@@ -8,14 +8,14 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static("client/build"));
+    app.use(express.static("client/build"));
 }
 
 const mongoose = require("mongoose");
-// const MONGODBURL = process.env.PROD_MONGODB || PORT;
-const MONGODBURL = "mongodb://heroku_vhdnrj2b:ktjflo9q5ct850gaus0imvgdtb@ds239206.mlab.com:39206/heroku_vhdnrj2b";
+const MONGODB_URI = `mongodb://dbSam:password@ds239206.mlab.com:39206/mighty-cliffs-79397`;
 
-mongoose.connect(MONGODBURL, { useNewUrlParser: true })
+
+mongoose.connect(MONGODB_URI, {useNewUrlParser: true})
   .then(() => {
     console.log("🗄 ==> Successfully connected to mongoDB.");
   })
