@@ -1,20 +1,16 @@
 {
-  "name": "mern",
+  "name": "react-google-books",
   "version": "1.0.0",
-  "description": "Mern Demo",
+  "description": "",
   "main": "server.js",
-  "engines": {
-    "node": "8.11.3",
-    "yarn": "1.12.3"
-  },
   "scripts": {
-    "start": "if-env NODE_ENV=production && yarn run start:prod || yarn run start:dev",
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "node server.js",
-    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"yarn run client\"",
-    "client": "cd client && yarn run start",
-    "install": "cd client && yarn install",
-    "build": "cd client && yarn run build",
-    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build"
   },
   "author": "",
   "license": "ISC",
@@ -24,10 +20,8 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
-    "dotenv": "^6.2.0",
-    "express": "^4.16.3",
+    "express": "^4.16.4",
     "if-env": "^1.0.4",
-    "mongodb": "^3.1.11",
-    "mongoose": "^5.4.4"
+    "mongoose": "^5.4.19"
   }
 }
